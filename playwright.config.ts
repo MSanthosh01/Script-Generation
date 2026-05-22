@@ -1,0 +1,10 @@
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
+  testDir: './tests',
+  testMatch: '**/*.{spec,test,script}.ts',
+  use: {
+    baseURL: 'https://qa.wnut.ai',
+  },
+  timeout: 60000,
+});
